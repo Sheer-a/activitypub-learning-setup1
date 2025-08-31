@@ -1,0 +1,30 @@
+{
+  "name": "activitypub-learning-setup",
+  "version": "1.0.0",
+  "description": "ActivityPub learning environment for university project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node examples/01-webfinger-discovery.js",
+    "webfinger": "node examples/01-webfinger-discovery.js",
+    "timeline": "node examples/02-public-timeline.js",
+    "actor": "node examples/03-actor-profile.js",
+    "objects": "node examples/04-activitypub-objects.js",
+    "notifications": "node examples/05-notification-simulation.js",
+    "test-all": "npm run webfinger && npm run timeline && npm run actor && npm run objects"
+  },
+  "keywords": ["activitypub", "mastodon", "fediverse", "learning"],
+  "author": "University Project",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "chalk": "^4.1.2",
+    "jsonld": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
